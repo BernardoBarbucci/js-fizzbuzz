@@ -9,6 +9,8 @@ const startButton = document.getElementById('startButton');
 let cardBoard = document.getElementById('cardBoard');
 // 3 eventlistener
 startButton.addEventListener('click', function() {
+    // sovrascrivere(togliere??) gli elementi figli dell'elemento cardBoard
+    cardBoard.innerHTML = '';
     // cycle for
     for (let i = 1; i <= 100; i++) {
         // creo un element nuovo da ripetere x volte

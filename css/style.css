@@ -12,8 +12,7 @@
     color: white;
 }
 .wrapper{
-    width: 100%;
-    max-width: 750px;
+    max-width: 2000px;
     height: 100%;
     margin: 5rem 7rem 5rem;
     border: 2px solid white;
@@ -21,6 +20,15 @@
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
+}
+.card-wrapper{
+    max-width: 2000px;
+    min-height: 400px;
+    max-height: 600px;
+    margin: 5rem 7rem 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid white;
 }
 #startButton{
     width: 7rem;
