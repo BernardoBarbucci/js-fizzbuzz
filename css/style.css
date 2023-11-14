@@ -18,6 +18,12 @@
     margin: 5rem 7rem 5rem;
     border: 2px solid white;
     display: flex;
-    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
+    flex-direction: column;
+}
+#startButton{
+    width: 7rem;
+    height: 3rem;
+    margin-top: 2rem;
 }

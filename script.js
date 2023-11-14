@@ -3,12 +3,13 @@
 //  per i multipli di 5 stampi “Buzz” al posto del numero
 //  per i numeri che sono sia multipli di 3 che di 5 stampi “FizzBuzz” al posto del numero.
 
-let str = '';
+// 1 collegare input con id
+const startButton = document.getElementById('startButton');
+// 2 collegare cardBoard 
+let cardBoard = document.getElementById('cardBoard');
+// 3 eventlistener
+startButton.addEventListener('click', function) {
+    // cycle for
+    for (let i = 1; i <= 100; i++)
 
-for (let i = 0; i < 100; i = i + 1) {
-  str = str + i;
-}
-
-console.log(str);
-
-// inizio programma con eventlistener
+} 
