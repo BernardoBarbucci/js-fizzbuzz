@@ -13,8 +13,14 @@ startButton.addEventListener('click', function() {
     for (let i = 1; i <= 100; i++) {
         // creo un element nuovo da ripetere x volte
         let windowElement = document.createElement('p');
-        // problema risolto QUA: textContent non è una funzione ma una propietà, per questo non andava con let davanti!!!
+        // numero relativo alla propria casella 
         windowElement.textContent = i;
+        // Fizz: verifica e cambia il nome se è un multiplo di 3 + diventa bold e blu
+        if (i % 3 === 0) {
+            windowElement.textContent = 'Fizz';
+            windowElement.style.fontWeight = 'Bold';
+            windowElement.style.color = 'Blue';
+        }
         // appendBimbo
         cardBoard.appendChild(windowElement);
     }
