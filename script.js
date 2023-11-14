@@ -17,11 +17,19 @@ startButton.addEventListener('click', function() {
         let windowElement = document.createElement('p');
         // numero relativo alla propria casella 
         windowElement.textContent = i;
-        // Fizz: verifica e cambia il nome se è un multiplo di 3 + diventa bold e blu
+        // Fizz: verifica e cambia il nome se è un multiplo di 3 + diventa bold e blu e di 2rem
         if (i % 3 === 0) {
             windowElement.textContent = 'Fizz';
             windowElement.style.fontWeight = 'Bold';
+            windowElement.style.fontSize = '2rem';
             windowElement.style.color = 'Blue';
+        }
+        // Buzz: verifica e cambia il nome se è un multiplo di 5 + diventa bold e rosso e di 2rem
+        if (i % 5 === 0) {
+            windowElement.textContent = 'Buzz';
+            windowElement.style.fontWeight = 'Bold';
+            windowElement.style.fontSize = '2rem';
+            windowElement.style.color = 'Red';
         }
         // appendBimbo
         cardBoard.appendChild(windowElement);
