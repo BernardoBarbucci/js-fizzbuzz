@@ -9,6 +9,7 @@ const startButton = document.getElementById('startButton');
 let cardBoard = document.getElementById('cardBoard');
 // 3 eventlistener
 startButton.addEventListener('click', function() {
+    startButton.value = 'Thanks!';
     // sovrascrivere(togliere??) gli elementi figli dell'elemento cardBoard
     cardBoard.innerHTML = '';
     // cycle for
@@ -24,6 +25,7 @@ startButton.addEventListener('click', function() {
         windowElement.style.border = '2px solid white';
         windowElement.style.borderRadius = '5px';
         windowElement.style.background = 'linear-gradient(135deg, #153677, #4e085f)'
+        windowElement.style.textAlign = 'center';
         
         // FizzBuzz = verifica e cambia il nome se è un multiplo di 15 + diventa bold e verde e di 2rem
             // FizzBuzz = verifica e cambia il nome se è un multiplo di 3 + diventa bold e blu e di 2rem
@@ -33,6 +35,8 @@ startButton.addEventListener('click', function() {
         windowElement.style.fontWeight = 'Bold';
         windowElement.style.fontSize = '1.2rem';
         windowElement.style.color = 'Green';
+        windowElement.style.width = '6rem';
+        windowElement.style.border = '2px solid red';
         } else if (i % 3 === 0) {
         windowElement.textContent = 'Fizz';
         windowElement.style.fontWeight = 'Bold';

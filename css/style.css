@@ -15,23 +15,42 @@
     max-width: 2000px;
     height: 100%;
     margin: 5rem 7rem 5rem;
-    border: 2px solid white;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
 }
+.wrapper > h1{
+    font-size: 4rem;
+    color: white;
+    box-shadow: #000;
+}
+.wrapper > h1:hover{
+    color: rgb(149, 231, 16);
+}
 .card-wrapper{
     max-width: 2000px;
     min-height: 400px;
-    max-height: 600px;
+    max-height: 650px;
     margin: 5rem 7rem 5rem;
     display: flex;
     flex-wrap: wrap;
-    border: 2px solid white;
+    justify-content: center;
 }
 #startButton{
     width: 7rem;
     height: 3rem;
     margin-top: 2rem;
+    font-size: .8rem;
+    font-weight: bold;
+}
+#startButton:hover{
+    background-color: rgb(149, 231, 16);
+    border-radius: 20px;
+}
+#startButton:active {
+    background-color: rgb(145, 0, 0);
+    color: white;
+    font-size: 1rem;
+    font-weight: bolder;
 }
